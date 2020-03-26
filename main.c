@@ -14,3 +14,6 @@ int line_ind;
 void addChar();
 void getChar();
 void expr();
+void term();
+void factor();
+int lookup(char ch);
