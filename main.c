@@ -42,5 +42,8 @@ int main(int argc, const char * argv[]) {
         printf("Error - cannot open input.txt\n");
     else {
         getChar();
+        do {
+            lex();
+        } while (nextToken != EOF);
     }
 }
