@@ -67,5 +67,9 @@ int lookup(char ch){
                 addChar();
                 nextToken = SUB_OP;
                 break;
+            case '*':
+                addChar();
+                nextToken = MULT_OP;
+                break;
         }
 }
