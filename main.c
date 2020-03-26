@@ -46,4 +46,9 @@ int main(int argc, const char * argv[]) {
             lex();
         } while (nextToken != EOF);
     }
+    return 0;
+}
+
+int lookup(char ch){
+    
 }
