@@ -8,3 +8,5 @@ char nextChar;
 char * line = NULL;
 int lexLen;
 int token;
+int nextToken;
+int line_ind;
