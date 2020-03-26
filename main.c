@@ -71,5 +71,9 @@ int lookup(char ch){
                 addChar();
                 nextToken = MULT_OP;
                 break;
+            case '/':
+                addChar();
+                nextToken = DIV_OP;
+                break;
         }
 }
