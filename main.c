@@ -34,3 +34,5 @@ void error();
 #define DIV_OP 24
 #define LEFT_PAREN 25
 #define RIGHT_PAREN 26
+
+FILE *fp;
