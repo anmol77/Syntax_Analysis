@@ -19,3 +19,7 @@ void factor();
 int lookup(char ch);
 int lex();
 void error();
+
+#define LETTER 0
+#define DIGIT 1
+#define UNKNOWN 99
