@@ -10,3 +10,7 @@ int lexLen;
 int token;
 int nextToken;
 int line_ind;
+
+void addChar();
+void getChar();
+void expr();
