@@ -40,4 +40,7 @@ FILE *fp;
 int main(int argc, const char * argv[]) {
     if ((fp = fopen(argv[1], "r")) == NULL)
         printf("Error - cannot open input.txt\n");
+    else {
+        getChar();
+    }
 }
