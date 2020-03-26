@@ -50,5 +50,9 @@ int main(int argc, const char * argv[]) {
 }
 
 int lookup(char ch){
-    
+    switch (ch) {
+            case '(':
+                addChar();
+                nextToken = LEFT_PAREN;
+    }
 }
