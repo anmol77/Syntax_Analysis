@@ -17,3 +17,5 @@ void expr();
 void term();
 void factor();
 int lookup(char ch);
+int lex();
+void error();
