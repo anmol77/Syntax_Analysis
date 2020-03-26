@@ -24,3 +24,7 @@ void error();
 #define DIGIT 1
 #define UNKNOWN 99
 #define TERM_CHAR 55
+
+#define INT_LIT 10
+#define IDENT 11
+#define ASSIGN_OP 20
