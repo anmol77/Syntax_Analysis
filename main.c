@@ -92,6 +92,8 @@ void getChar(){
             charClass = LETTER;
         else if (isdigit(nextChar))
             charClass = DIGIT;
-        
+        else charClass = UNKNOWN;
     }
+    else
+        charClass = EOF;
 }
