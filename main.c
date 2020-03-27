@@ -151,7 +151,11 @@ int lex(){
     return nextToken;
 }
 
-/* Parser for arithmetic expression*/
+/*
+    Parser for arithmetic exprsn:
+    <expr>    -->  <term>   {(+ | -) <term>}
+    <term>    -->  <factor> {(* | /) <factor>}
+*/
 void expr(){
     printf("Enter <expr>\n");
     term();
