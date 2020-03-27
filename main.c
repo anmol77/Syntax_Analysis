@@ -36,17 +36,13 @@ void error();
 #define RIGHT_PAREN 26
 
 FILE *fp;
+size_t len = 0;
+ssize_t read;
+char * line = NULL;
 
 int main(int argc, const char * argv[]) {
     if ((fp = fopen(argv[1], "r")) == NULL)
         printf("Error - cannot open input.txt\n");
-    else {
-        getChar();
-        do {
-            lex();
-            expr();
-        } while (nextToken != EOF);
-    }
     return 0;
 }
 
