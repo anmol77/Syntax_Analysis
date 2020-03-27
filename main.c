@@ -183,5 +183,8 @@ void factor(){
                 lex();
             } else
                 error();
+        }
+        else
+            error();
     }
 }
