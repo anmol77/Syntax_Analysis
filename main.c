@@ -153,6 +153,7 @@ int lex(){
 
 /*
     Parser for arithmetic exprsn:
+    <stmt>    -->  id = <expr>
     <expr>    -->  <term>   {(+ | -) <term>}
     <term>    -->  <factor> {(* | /) <factor>}
     <factor>  -->  id | int_constant | (<expr>)
