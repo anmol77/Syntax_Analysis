@@ -48,6 +48,8 @@ int main(int argc, const char * argv[]) {
         do {
             lex();
             expr();
+        } while (nextToken != EOF);
+    }
     return 0;
 }
 
