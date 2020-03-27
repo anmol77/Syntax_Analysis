@@ -102,5 +102,7 @@ void addChar(){
     if (lexLen <= 98) {
         lexeme[lexLen++] = nextChar;
         lexeme[lexLen] = 0;
+    } else {
+        printf("Error - lexeme is too long\n");
     }
 }
