@@ -154,4 +154,8 @@ int lex(){
 void expr(){
     printf("Enter <expr>\n");
     term();
+    while (nextToken == ADD_OP || nextToken == SUB_OP) {
+           lex ();
+           term ();
+       }
 }
