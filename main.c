@@ -119,5 +119,9 @@ int lex(){
         case LETTER:
             addChar();
             getChar();
+            while (charClass == LETTER || charClass == DIGIT) {
+                addChar();
+                getChar();
+            }
     }
 }
