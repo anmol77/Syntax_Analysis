@@ -78,5 +78,9 @@ int lookup(char ch){
             case '\n':
                 addChar();
                 nextToken = '\n';
+            default:
+                addChar();
+                nextToken = EOF;
+                break;
         }
 }
