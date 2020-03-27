@@ -97,3 +97,7 @@ void getChar(){
     else
         charClass = EOF;
 }
+
+void addChar(){
+    
+}
