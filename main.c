@@ -155,6 +155,7 @@ int lex(){
     Parser for arithmetic exprsn:
     <expr>    -->  <term>   {(+ | -) <term>}
     <term>    -->  <factor> {(* | /) <factor>}
+    <factor>  -->  id | int_constant | (<expr>)
 */
 void expr(){
     printf("Enter <expr>\n");
