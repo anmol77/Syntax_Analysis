@@ -128,5 +128,9 @@ int lex(){
         case DIGIT:
             addChar();
             getChar();
+            while (charClass == DIGIT) {
+                addChar();
+                getChar();
+            }
     }
 }
