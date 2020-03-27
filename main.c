@@ -111,3 +111,9 @@ void getNonBlank(){
     while (isspace(nextChar))
         getChar();
 }
+
+int lex(){
+    lexLen = 0;
+    getNonBlank();
+    switch(charClass)
+}
