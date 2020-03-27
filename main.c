@@ -125,5 +125,8 @@ int lex(){
             }
             nextToken = IDENT;
             break;
+        case DIGIT:
+            addChar();
+            getChar();
     }
 }
