@@ -38,7 +38,6 @@ void error();
 FILE *fp;
 size_t len = 0;
 ssize_t read;
-char * line = NULL;
 
 int main(int argc, const char * argv[]) {
     if ((fp = fopen(argv[1], "r")) == NULL)
