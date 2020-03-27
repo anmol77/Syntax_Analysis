@@ -179,5 +179,9 @@ void factor(){
         if (nextToken == LEFT_PAREN) {
             lex();
             expr();
+            if (nextToken == RIGHT_PAREN) {
+                lex();
+            } else
+                error();
     }
 }
