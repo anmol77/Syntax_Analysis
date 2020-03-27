@@ -99,5 +99,8 @@ void getChar(){
 }
 
 void addChar(){
-    
+    if (lexLen <= 98) {
+        lexeme[lexLen++] = nextChar;
+        lexeme[lexLen] = 0;
+    }
 }
