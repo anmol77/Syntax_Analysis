@@ -160,3 +160,8 @@ void expr(){
        }
     printf("Exit <expr>\n");
 } /* End of function expr */
+
+void term() {
+    printf("Enter <term>\n");
+    factor();
+}
