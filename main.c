@@ -168,4 +168,5 @@ void term() {
         lex();
         factor();
     }
+    printf("Exit <term>\n");
 }
