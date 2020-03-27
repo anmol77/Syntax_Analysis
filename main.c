@@ -115,5 +115,9 @@ void getNonBlank(){
 int lex(){
     lexLen = 0;
     getNonBlank();
-    switch(charClass)
+    switch(charClass){
+        case LETTER:
+            addChar();
+            getChar();
+    }
 }
