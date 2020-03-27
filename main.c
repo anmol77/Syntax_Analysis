@@ -187,4 +187,5 @@ void factor(){
         else
             error();
     }
+    printf("Exit <factor>\n")
 }
