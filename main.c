@@ -106,3 +106,8 @@ void addChar(){
         printf("Error - lexeme is too long\n");
     }
 }
+
+void getNonBlank(){
+    while (isspace(nextChar))
+        getChar();
+}
