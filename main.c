@@ -132,5 +132,7 @@ int lex(){
                 addChar();
                 getChar();
             }
+            nextToken = INT_LIT;
+            break;
     }
 }
