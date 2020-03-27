@@ -87,7 +87,7 @@ int lookup(char ch){
 }
 
 void getChar(){
-    if ((nextChar = getc(in_fp)) != EOF){
+    if ((nextChar = getc(fp)) != EOF){
         if (isalpha(nextChar))
             charClass = LETTER;
         else if (isdigit(nextChar))
@@ -148,4 +148,10 @@ int lex(){
     }
     printf("Next token is: %d, Next lexeme is %s\n", nextToken, lexeme);
     return nextToken;
+}
+
+/* Parser for arithmetic expression*/
+void expr(){
+    printf("Enter <expr>\n");
+    term();
 }
