@@ -89,5 +89,9 @@ int lookup(char ch){
 void getChar(){
     if ((nextChar = getc(in_fp)) != EOF){
         if (isalpha(nextChar))
+            charClass = LETTER;
+        else if (isdigit(nextChar))
+            charClass = DIGIT;
+        
     }
 }
