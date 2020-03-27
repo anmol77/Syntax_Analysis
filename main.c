@@ -44,6 +44,7 @@ int main(int argc, const char * argv[]) {
         getChar();
         do {
             lex();
+            expr();
         } while (nextToken != EOF);
     }
     return 0;
