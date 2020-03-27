@@ -164,4 +164,8 @@ void expr(){
 void term() {
     printf("Enter <term>\n");
     factor();
+    while (nextToken == MULT_OP || nextToken == DIV_OP) {
+        lex();
+        factor();
+    }
 }
