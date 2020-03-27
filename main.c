@@ -85,3 +85,9 @@ int lookup(char ch){
         }
     return nextToken;
 }
+
+void getChar(){
+    if ((nextChar = getc(in_fp)) != EOF){
+        if (isalpha(nextChar))
+    }
+}
