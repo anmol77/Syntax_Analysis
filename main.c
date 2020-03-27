@@ -138,5 +138,9 @@ int lex(){
             lookup(nextChar);
             getChar();
             break;
+        case EOF:
+            nextToken = EOF;
+            lexeme[0] = 'E';
+            lexeme[1] = 'O';
     }
 }
