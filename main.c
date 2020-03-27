@@ -189,3 +189,7 @@ void factor(){
     }
     printf("Exit <factor>\n")
 }
+
+void error() {
+  printf("Error");
+}
