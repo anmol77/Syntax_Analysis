@@ -206,5 +206,5 @@ void factor(){
 }
 
 void error() {
-  printf("Error");
+  printf("Error occured while parsing line");
 }
