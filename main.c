@@ -10,6 +10,7 @@ int lexLen;
 int token;
 int nextToken;
 int currentIndexCount;
+int lineNumber = 0;
 int line_ind;
 
 void addChar();
