@@ -9,6 +9,7 @@ char * line = NULL;
 int lexLen;
 int token;
 int nextToken;
+int currentIndexCount;
 int line_ind;
 
 void addChar();
