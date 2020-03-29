@@ -43,6 +43,8 @@ int main(int argc, const char * argv[]) {
     if ((fp = fopen(argv[1], "r")) == NULL)
         printf("Error - cannot open input.txt\n");
     while((read = getline(&line, &len, fp)) != -1) {
+        lineNumber += 1;
+        currentIndexCount = 0;
         getChar();
         do {
             lex();
