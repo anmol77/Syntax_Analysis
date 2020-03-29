@@ -93,6 +93,9 @@ int lookup(char ch){
 }
 
 void getChar(){
+    if (line[currentIndexCount] == '\n' || line[currentIndexCount] == '\0') {
+        charClass = EOF;
+    }
     if ((nextChar = getc(fp)) != EOF){
         if (isalpha(nextChar))
             charClass = LETTER;
@@ -100,8 +103,6 @@ void getChar(){
             charClass = DIGIT;
         else charClass = UNKNOWN;
     }
-    else
-        charClass = EOF;
 }
 
 void addChar(){
