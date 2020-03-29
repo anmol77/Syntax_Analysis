@@ -42,12 +42,13 @@ ssize_t read;
 int main(int argc, const char * argv[]) {
     if ((fp = fopen(argv[1], "r")) == NULL)
         printf("Error - cannot open input.txt\n");
-    else {
+    while((read = getline(&line, &len, fp)) != -1) {
         getChar();
         do {
             lex();
             expr();
         } while (nextToken != EOF);
+        printf("\n\n");
     }
     return 0;
 }
