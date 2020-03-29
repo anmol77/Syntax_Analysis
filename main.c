@@ -96,7 +96,9 @@ void getChar(){
     if (line[currentIndexCount] == '\n' || line[currentIndexCount] == '\0') {
         charClass = EOF;
     }
-    if ((nextChar = getc(fp)) != EOF){
+    else {
+        nextChar = line[currentIndexCount];
+        currentIndexCount += 1;
         if (isalpha(nextChar))
             charClass = LETTER;
         else if (isdigit(nextChar))
