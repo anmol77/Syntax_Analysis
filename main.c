@@ -50,7 +50,6 @@ int main(int argc, const char * argv[]) {
         getChar();
         do {
             lex();
-            expr();
         } while (nextToken != EOF);
         printf("\n\n");
     }
@@ -173,16 +172,14 @@ int lex(){
     <factor>  -->  id | int_constant | (<expr>)
 */
 void stmt(){
-    print("Enter <stmt>\n");
-    if (nextToken = IDENT){
+    if (nextToken == IDENT){
         lex();
-        if (nextToken == ASSIGN_OP){
+        while (nextToken == ASSIGN_OP){
             lex();
             expr();
-        } else
-            error();
+        }
     }
-    print("Exit <stmt>\n");
+    printf("Exit <stmt>\n");
 }
 
 void expr(){
