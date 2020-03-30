@@ -51,6 +51,7 @@ int main(int argc, const char * argv[]) {
         getChar();
         do {
             lex();
+            stmt();
         } while (nextToken != EOF);
         printf("\n\n");
     }
