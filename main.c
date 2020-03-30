@@ -172,6 +172,9 @@ int lex(){
     <term>    -->  <factor> {(* | /) <factor>}
     <factor>  -->  id | int_constant | (<expr>)
 */
+void stmt(){
+    print("Enter <stmt>\n");
+}
 void expr(){
     printf("Enter <expr>\n");
     term();
