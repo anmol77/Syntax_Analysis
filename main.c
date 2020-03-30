@@ -15,6 +15,7 @@ int line_ind;
 
 void addChar();
 void getChar();
+void stmt();
 void expr();
 void term();
 void factor();
