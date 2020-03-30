@@ -174,6 +174,8 @@ int lex(){
 */
 void stmt(){
     print("Enter <stmt>\n");
+    if (nextToken = IDENT)
+        lex();
 }
 void expr(){
     printf("Enter <expr>\n");
