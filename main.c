@@ -174,6 +174,7 @@ int lex(){
     <factor>  -->  id | int_constant | (<expr>)
 */
 void stmt(){
+    printf("Enter <stmt>\n");
     if (nextToken == IDENT){
         lex();
         while (nextToken == ASSIGN_OP){
