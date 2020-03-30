@@ -174,8 +174,10 @@ int lex(){
 */
 void stmt(){
     print("Enter <stmt>\n");
-    if (nextToken = IDENT)
+    if (nextToken = IDENT){
         lex();
+    }
+    print("Exit <stmt>\n");
 }
 void expr(){
     printf("Enter <expr>\n");
