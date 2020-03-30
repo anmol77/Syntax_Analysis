@@ -176,6 +176,10 @@ void stmt(){
     print("Enter <stmt>\n");
     if (nextToken = IDENT){
         lex();
+        if (nextToken = ASSIGN_OP){
+            lex();
+            expr();
+        }
     }
     print("Exit <stmt>\n");
 }
