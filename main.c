@@ -179,7 +179,8 @@ void stmt(){
         if (nextToken = ASSIGN_OP){
             lex();
             expr();
-        }
+        } else
+            error();
     }
     print("Exit <stmt>\n");
 }
