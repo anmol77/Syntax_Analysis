@@ -176,7 +176,7 @@ void stmt(){
     print("Enter <stmt>\n");
     if (nextToken = IDENT){
         lex();
-        if (nextToken = ASSIGN_OP){
+        if (nextToken == ASSIGN_OP){
             lex();
             expr();
         } else
@@ -184,6 +184,7 @@ void stmt(){
     }
     print("Exit <stmt>\n");
 }
+
 void expr(){
     printf("Enter <expr>\n");
     term();
