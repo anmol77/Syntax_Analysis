@@ -20,6 +20,7 @@ void expr();
 void term();
 void factor();
 int lookup(char ch);
+int is_empty(char *s);
 int lex();
 void error();
 
