@@ -59,6 +59,11 @@ int main(int argc, const char * argv[]) {
     return 0;
 }
 
+int is_empty(char *s) {
+  while (*s != '\0') {
+    if (!isspace((unsigned char)*s))
+      return 0;
+}
 int lookup(char ch){
     switch (ch) {
             case '(':
