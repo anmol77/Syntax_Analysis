@@ -110,7 +110,7 @@ int lookup(char ch){
 }
 
 void getChar(){
-    if (line[currentIndexCount] == '\n' || line[currentIndexCount] == '\0') {
+    if (line[currentIndexCount] == '\n' || line[currentIndexCount] == '\0' || is_empty(&line[currentIndexCount])) {
         charClass = EOF;
     }
     else {
