@@ -63,6 +63,7 @@ int main(int argc, const char * argv[]) {
         getChar();
         lex();
     }
+    printf("\n");
     return 0;
 }
 
