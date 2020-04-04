@@ -203,10 +203,10 @@ void stmt(){
     } else {
         error();
     }
-        if (!errorcalled){
-    printf("Exit <stmt>\n");
-        }
+    if (!errorCalled){
+        printf("Exit <stmt>\n");
     }
+  }
 }
 
 void expr(){
