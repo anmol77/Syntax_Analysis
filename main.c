@@ -192,6 +192,7 @@ int lex(){
     <factor>  -->  id | int_constant | (<expr>)
 */
 void stmt(){
+    if (nextToken != -1){
     printf("Enter <stmt>\n");
     if (nextToken == IDENT){
         lex();
@@ -201,6 +202,7 @@ void stmt(){
         }
     }
     printf("Exit <stmt>\n");
+    }
 }
 
 void expr(){
