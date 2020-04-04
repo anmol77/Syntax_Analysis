@@ -50,13 +50,14 @@ int main(int argc, const char * argv[]) {
     if ((fp = fopen(argv[1], "r")) == NULL)
         printf("Error - cannot open input.txt\n");
     while((read = getline(&line, &len, fp)) != -1) {
+        successfulLineRead = true;
         lineNumber += 1;
         currentIndexCount = 0;
         getChar();
         do {
             lex();
             stmt();
-        } while (nextToken != EOF);
+        } while (nextToken != EOF && !(errorCalled));
         printf("\n\n");
     }
     return 0;
