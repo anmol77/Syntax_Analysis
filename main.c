@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <ctype.h>
+#include <stdbool.h>
 
 int charClass;
 char lexeme[1000];
@@ -12,6 +13,8 @@ int nextToken;
 int currentIndexCount;
 int lineNumber = 0;
 int line_ind;
+bool errorCalled = false;
+bool successfulLineRead = false;
 
 void addChar();
 void getChar();
