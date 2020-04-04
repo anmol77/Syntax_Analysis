@@ -200,8 +200,12 @@ void stmt(){
             lex();
             expr();
         }
+    } else {
+        error();
     }
+        if (!errorcalled){
     printf("Exit <stmt>\n");
+        }
     }
 }
 
