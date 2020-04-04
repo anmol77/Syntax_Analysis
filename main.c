@@ -196,9 +196,11 @@ void stmt(){
     printf("Enter <stmt>\n");
     if (nextToken == IDENT){
         lex();
-        while (nextToken == ASSIGN_OP){
+        if (nextToken == ASSIGN_OP){
             lex();
             expr();
+        } else {
+            error();
         }
     } else {
         error();
