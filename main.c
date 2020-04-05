@@ -193,8 +193,8 @@ int lex(){
 */
 void stmt(){
     if (nextToken != -1){
-    printf("Enter <stmt>\n");
     if (nextToken == IDENT){
+        printf("Enter <stmt>\n");
         lex();
         if (nextToken == ASSIGN_OP){
             lex();
@@ -252,4 +252,5 @@ void factor(){
 
 void error() {
   printf("Error\n");
+  errorCalled = true;
 }
