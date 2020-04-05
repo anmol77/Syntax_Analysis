@@ -230,7 +230,9 @@ void term() {
         lex();
         factor();
     }
-    printf("Exit <term>\n");
+    if (!errorCalled){
+          printf("Exit <term>\n");
+      }
 }
 
 void factor(){
