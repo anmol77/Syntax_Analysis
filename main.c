@@ -251,7 +251,9 @@ void factor(){
         else
             error();
     }
-    printf("Exit <factor>\n");
+    if (!errorCalled){
+          printf("Exit <factor>\n");
+      }
 }
 
 void error() {
