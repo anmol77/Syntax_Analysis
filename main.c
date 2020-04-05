@@ -58,6 +58,7 @@ int main(int argc, const char * argv[]) {
             lex();
             stmt();
         } while (nextToken != EOF && !(errorCalled));
+        printf("\n");
     }
     if ((getline(&line, &len, fp)) == -1 && (!successfulLineRead)){
         getChar();
