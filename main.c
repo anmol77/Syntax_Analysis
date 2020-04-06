@@ -51,6 +51,7 @@ int main(int argc, const char * argv[]) {
         printf("Error - cannot open input.txt\n");
     while((read = getline(&line, &len, fp)) != -1) {
         successfulLineRead = true;
+        errorCalled = false;
         lineNumber += 1;
         currentIndexCount = 0;
         getChar();
