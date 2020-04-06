@@ -194,8 +194,8 @@ int lex(){
 */
 void stmt(){
     if (nextToken != -1){
-    if (nextToken == IDENT){
         printf("Enter <stmt>\n");
+    if (nextToken == IDENT){
         lex();
         if (nextToken == ASSIGN_OP){
             lex();
