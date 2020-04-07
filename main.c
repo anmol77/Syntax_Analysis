@@ -199,6 +199,9 @@ void stmt(){
         if (nextToken == ASSIGN_OP){
             lex();
             expr();
+            if (line[currentIndexCount] != '\n'){
+                error();
+            }
         } else {
             error();
         }
